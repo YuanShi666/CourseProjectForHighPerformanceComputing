@@ -1,0 +1,2 @@
+# CourseProjectForHighPerformanceComputing
+高性能计算「最小二乘并行化」大作业
