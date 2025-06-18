@@ -1,2 +1,2 @@
-# CourseProjectForHighPerformanceComputing
+# 测绘学院《高性能计算》的「最小二乘并行化」大作业
 高性能计算「最小二乘并行化」大作业
