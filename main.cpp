@@ -47,7 +47,7 @@ int main()
 
 	matrix SolSer;
 	stt = omp_get_wtime();
-	SolSer.LeastSquaresEstimation_Parallel(DesMat, ObsVec, false); //最佳串行实现(不执行并行化的“OpenMP并行实”现)
+	SolSer.LeastSquaresEstimation_Parallel(DesMat, ObsVec, false); //最佳串行实现(不执行并行化的“OpenMP并行实现”)
 	end = omp_get_wtime();
 	CoutResult(SolRef, SolSer, stt, end);
 
