@@ -23,16 +23,13 @@ void CoutResult(const matrix& Ref, const matrix& Res, double Stt, double End)
 
 int main()
 {
-	//应选择位于注释的同一列上的数据作为输入、以保证矩阵维度的适配
-	//DesMat_5120_512   DesMat_10240_1024   DesMat_15360_2048
+	//应保证设计矩阵、观测向量和解向量在维度上的适配
 	string FileName = "../DataSet/DesMat_10240_1024.bmt";
 	matrix DesMat(FileName, MatFileFormat::BMT, MatDataMajor::Col);
 
-	//ObsVec_5120       ObsVec_10240        ObsVec_15360
 	FileName = "../DataSet/ObsVec_10240.bmt";
 	matrix ObsVec(FileName, MatFileFormat::BMT, MatDataMajor::Col);
 
-	//SolVec_512        SolVec_1024         SolVec_2048
 	FileName = "../DataSet/SolVec_1024.bmt";
 	matrix SolRef(FileName, MatFileFormat::BMT, MatDataMajor::Col);
 
